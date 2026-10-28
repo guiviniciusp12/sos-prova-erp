@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prova Etapa 2 — Supabase — testes 1 e 2</title><link rel="stylesheet" href="../estilo.css"></head>
+<body>
+<h1>Supabase — testes 1 e 2 <small>(projeto de TESTE, dados fictícios)</small></h1>
+<section><h2>0. Verificar ambiente (obrigatório)</h2>
+<p>Confere: os 8 usuários fictícios entram com a senha de teste; o <b>autocadastro está desligado</b>; visitantes não leem dados.</p>
+<button id="verificar">Verificar ambiente</button><p id="estado0"></p><div id="r0"></div></section>
+<section><h2>1. Reservas concorrentes</h2><button id="t1">Rodar teste 1</button><div id="r1"></div></section>
+<section><h2>2. Permissões por perfil</h2><button id="t2">Rodar teste 2</button><p id="resumo2"></p><div id="r2"></div></section>
+<section><h2>3. Conferir registros de campo (depois dos celulares)</h2><button id="t3">Conferir registros de campo</button><div id="r3"></div></section>
+<section><h2>Resultado para enviar ao Claude</h2><textarea id="json" rows="8" readonly></textarea><button id="copiar">Copiar resultado</button></section>
+<pre id="log"></pre>
+<script type="module" src="testes.js"></script>
+</body></html>
