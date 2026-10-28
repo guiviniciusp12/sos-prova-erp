@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prova — OS de campo (Firebase)</title><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="../estilo.css"></head>
+<body>
+<div id="status" class="pend">Carregando…</div>
+<p><b>Prova Firebase</b> · dados fictícios · <span id="quem"></span> <button type="button" id="sair" style="background:#666;padding:4px 8px;font-size:12px">sair</button></p>
+<div id="login"><label>E-mail de teste<input id="email" type="email" value="prova.operador1@example.com" autocomplete="username"></label>
+<label>Senha de teste<input id="senha" type="password" autocomplete="current-password"></label><button id="entrar">Entrar</button></div>
+<form id="form" hidden>
+  <label>OS<select id="os"></select></label>
+  <label>Gerador (só os da OS)<select id="ativo"></select></label>
+  <label>Data<input id="data" type="date" lang="pt-BR" required></label>
+  <label>Horímetro inicial<input id="hi" type="number" step="0.1" inputmode="decimal" required></label>
+  <label>Horímetro final<input id="hf" type="number" step="0.1" inputmode="decimal" required></label>
+  <label>Assinatura do cliente</label><canvas id="sig" width="600" height="200"></canvas>
+  <button type="button" id="limpar" style="background:#666">Limpar assinatura</button>
+  <button type="submit">Salvar registro</button>
+  <button type="button" id="sincronizar" style="background:#333">Sincronizar agora</button>
+</form>
+<ul id="fila"></ul>
+<script type="module" src="app.js"></script>
+</body></html>
